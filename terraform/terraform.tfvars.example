@@ -1,0 +1,4 @@
+my_ip_cidr   = "YOUR_IP_HERE/32"
+proxy_cidr   = "YOUR_PROXY_IP_HERE/32"
+project_name = "hybrid-cloud-starter"
+aws_region   = "ap-southeast-1"
