@@ -1,15 +1,18 @@
 # HTX-a
-My attempt for HCE engineer role
 
-## Navigation Guide 
+My attempt for the HCE engineer role.
+
+## Navigation Guide
 
 | Task | Location | Comments |
-|---|---|
-| `1` | achitecture/architecture.md | Mode-A.png and Mode-B.png is the visualization of the write-up |
-| `2` | terraform/ | I have ran Terraform on an AWS Free tier account, so terraform/ contains working IaC mains, variables, and output files. The compute and network can be found in terraform/modules/"
-| `3` | root/ | refer to ci.yml at root |
-| `4` | docs/observability.md | refer to docs/ |
-| `5` | docs/security.md | refer to docs/ |
-| `6` | drift-detector/ | |
+|---|---|---|
+| `1` | `architecture/architecture.md` | `Mode-A.png` and `Mode-B.png` are visualizations of the write-up. |
+| `2` | `terraform/` | Terraform was run on an AWS Free Tier account. `terraform/` contains working IaC main, variables, and output files. Compute and network modules can be found in `terraform/modules/`. |
+| `3` | `ci.yml` | Refer to `ci.yml` at the repository root. |
+| `4` | `docs/observability.md` | Refer to `docs/`. |
+| `5` | `docs/security.md` | Refer to `docs/`. |
+| `6` | `drift-detector/` | Contains the drift detector implementation. |
 
-I have opted out of LLM component due to gap in AI implementation knowledge.
+## Note
+
+I opted out of the LLM component due to a gap in AI implementation knowledge.
