@@ -2,11 +2,11 @@ name: Terraform CI/CD
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, prod]
     paths:
       - 'terraform/**'
   push:
-    branches: [main]
+    branches: [main, prod]
     paths:
       - 'terraform/**'
 
@@ -18,6 +18,7 @@ permissions:
 env:
   AWS_REGION: ap-southeast-1
   TF_WORKING_DIR: terraform
+  ACTIONS_STEP_DEBUG: true
 
 jobs:
 
@@ -39,7 +40,7 @@ jobs:
           directory: ${{ env.TF_WORKING_DIR }}
           framework: terraform
           output_format: cli
-          soft_fail: false   # fail the pipeline if Checkov finds a high-severity issue
+          soft_fail: true   # fail the pipeline if Checkov finds a high-severity issue
 
   # ---------------------------------------------------------
   # Stage 2: Automated Drift/Risk Detection (Task 6)

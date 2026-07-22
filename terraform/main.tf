@@ -17,4 +17,5 @@ module "network" {
   project_name = var.project_name
   my_ip_cidr   = var.my_ip_cidr
   proxy_cidr   = var.proxy_cidr
+
 }
