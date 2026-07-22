@@ -67,6 +67,7 @@ resource "aws_security_group" "web" {
   }
 
   egress {
+    description = "Out to internet"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
