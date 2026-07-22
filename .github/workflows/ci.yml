@@ -18,6 +18,7 @@ permissions:
 env:
   AWS_REGION: ap-southeast-1
   TF_WORKING_DIR: terraform
+  ACTIONS_STEP_DEBUG: true
 
 jobs:
 
