@@ -1,6 +1,8 @@
 # HTX-a
 My attempt for HCE engineer role
 
+## Navigation Guide 
+
 | Task | Location | Comments |
 |---|---|
 | `1` | achitecture/architecture.md | Mode-A.png and Mode-B.png is the visualization of the write-up |
