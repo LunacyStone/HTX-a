@@ -19,8 +19,12 @@ resource "aws_instance" "web" {
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [var.security_group_id]
   key_name               = var.key_name
+  monitoring             = true
 
   tags = {
     Name = "${var.project_name}-web-instance"
+  }
+  root_block_device { 
+    encrypted = true 
   }
 }
